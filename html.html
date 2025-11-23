@@ -1,0 +1,696 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formify — Simple Form Builder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css.css"/>
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="#" data-route="home">Formify<span>*</span></a>
+    <nav class="nav-links">
+      <a href="#" data-route="login">Log in</a>
+      <a class="btn btn-sm" href="#" data-route="signup">Sign up</a>
+      <a class="btn btn-sm primary" href="#" data-route="builder">Create form</a>
+    </nav>
+  </header>
+
+  <main id="home" class="view active">
+    <section class="hero container">
+      <div class="hero-content">
+        <div class="hero-left">
+          <h1>The simplest way to create forms</h1>
+          <p class="lead">
+            Say goodbye to boring forms. Meet Formify — a free, intuitive form builder that makes creating beautiful forms effortless.
+          </p>
+          <div class="hero-actions">
+            <button class="btn primary lg" data-route="builder">Create a free form →</button>
+            <button class="btn ghost lg" data-route="signup">Sign up</button>
+          </div>
+          <div class="subtle">No signup required to try the builder.</div>
+        </div>
+
+        <div class="hero-right">
+          <div class="mock-card">
+            <div class="mock-top">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            </div>
+            <div class="mock-body">
+              <div class="mock-title">Contact Form</div>
+              <div class="mock-line"></div>
+              <div class="mock-line short"></div>
+              <div class="mock-line"></div>
+              <div class="mock-line short"></div>
+              <div class="mock-btn">Submit Form</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-section container">
+      <div class="stats-header">
+        <h2 class="section-title">Platform Statistics</h2>
+        <p class="section-subtitle">Join thousands of users building amazing forms</p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">10K+</div>
+          <div class="stat-label">Forms Created</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">50K+</div>
+          <div class="stat-label">Submissions</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">5K+</div>
+          <div class="stat-label">Active Users</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">99.9%</div>
+          <div class="stat-label">Uptime</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features container">
+      <h2 class="section-title">Powerful Features</h2>
+      <div class="features-grid">
+        <div class="feature">
+          <h3>Multi-field builder</h3>
+          <p>Add text, choices, numbers, date/time, rating and more. Build complex forms with ease.</p>
+        </div>
+        <div class="feature">
+          <h3>Publish & share</h3>
+          <p>One click generates a public URL for your form. Share instantly with anyone.</p>
+        </div>
+        <div class="feature">
+          <h3>Analytics & history</h3>
+          <p>Track submissions and view your own history. Get insights into your form performance.</p>
+        </div>
+        <div class="feature">
+          <h3>Real-time preview</h3>
+          <p>See your form exactly as users will see it. Preview before publishing.</p>
+        </div>
+        <div class="feature">
+          <h3>Custom validation</h3>
+          <p>Set min/max values, regex patterns, and custom rules for each field.</p>
+        </div>
+        <div class="feature">
+          <h3>Version control</h3>
+          <p>Automatic versioning when you make changes. Never lose your work.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="showcase container">
+      <h2 class="section-title">Why Choose Formify?</h2>
+      <div class="showcase-grid">
+        <div class="showcase-card">
+          <div class="showcase-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+          </div>
+          <h3>Lightning Fast</h3>
+          <p>Create and publish forms in seconds. No complex setup required.</p>
+        </div>
+        <div class="showcase-card">
+          <div class="showcase-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+              <path d="M2 17l10 5 10-5"></path>
+              <path d="M2 12l10 5 10-5"></path>
+            </svg>
+          </div>
+          <h3>Beautiful Design</h3>
+          <p>Modern, clean interface that your users will love.</p>
+        </div>
+        <div class="showcase-card">
+          <div class="showcase-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+          </div>
+          <h3>Secure & Private</h3>
+          <p>Your data stays safe. Control access with authentication options.</p>
+        </div>
+        <div class="showcase-card">
+          <div class="showcase-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="20" x2="18" y2="10"></line>
+              <line x1="12" y1="20" x2="12" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="14"></line>
+            </svg>
+          </div>
+          <h3>Advanced Analytics</h3>
+          <p>Track submissions, completion rates, and get detailed insights.</p>
+        </div>
+        <div class="showcase-card">
+          <div class="showcase-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+              <line x1="12" y1="22.08" x2="12" y2="12"></line>
+            </svg>
+          </div>
+          <h3>Easy Integration</h3>
+          <p>Share forms via simple URLs. No technical knowledge needed.</p>
+        </div>
+        <div class="showcase-card">
+          <div class="showcase-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+            </svg>
+          </div>
+          <h3>Smart Features</h3>
+          <p>Conditional logic, time-based access, and single submission modes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials-section container">
+      <h2 class="section-title">What Our Users Say</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"Formify made creating our contact forms so easy. The analytics feature is a game-changer!"</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">SM</div>
+            <div>
+              <div class="author-name">Sarah Martinez</div>
+              <div class="author-role">Marketing Director</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"I love how intuitive the builder is. No coding required, and the forms look professional."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">JD</div>
+            <div>
+              <div class="author-name">James Davis</div>
+              <div class="author-role">Small Business Owner</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"The real-time preview and version control saved us so much time. Highly recommend!"</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">AL</div>
+            <div>
+              <div class="author-name">Alex Lee</div>
+              <div class="author-role">Product Manager</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section container">
+      <div class="cta-box animated-border">
+        <h2>Ready to get started?</h2>
+        <p>Join thousands of users creating beautiful forms with Formify</p>
+        <div class="cta-actions">
+          <button class="btn primary lg" data-route="builder">Start Building Now</button>
+          <button class="btn ghost lg" data-route="signup">Create Account</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer container">
+      <div>© Formify demo</div>
+      <div class="footer-links">
+        <a href="#" data-route="builder">Create form</a>
+        <a href="#" data-route="login">Log in</a>
+      </div>
+    </footer>
+  </main>
+
+  <main id="signup" class="view">
+    <section class="container auth">
+      <div class="auth-card">
+        <h2>Create your Formify account</h2>
+        <p style="margin:0 0 28px; color:var(--muted); font-size:16px; line-height:1.6">Start building beautiful forms in seconds. Free forever.</p>
+
+        <div class="oauth">
+          <button class="btn oauth-btn" id="googleBtn">
+            <svg width="20" height="20" viewBox="0 0 24 24" style="flex-shrink:0">
+              <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+              <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+              <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+              <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+            </svg>
+            Continue with Google
+          </button>
+          <button class="btn oauth-btn" id="appleBtn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0">
+              <path d="M17.05 20.28c-.98.95-2.05.88-3.08.4-1.09-.5-2.08-.48-3.24 0-1.44.62-2.2.44-3.06-.4C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+            </svg>
+            Continue with Apple
+          </button>
+        </div>
+
+        <div class="divider"><span>or</span></div>
+
+        <form id="signupForm">
+          <label>Full Name</label>
+          <input type="text" id="signupFullName" required placeholder="John Doe"/>
+          <label>Email</label>
+          <input type="email" id="signupEmail" required placeholder="you@example.com"/>
+          <label>Password</label>
+          <div class="password-wrapper">
+            <input type="password" id="signupPassword" required placeholder="••••••••"/>
+            <button type="button" class="password-toggle" id="signupPasswordToggle" aria-label="Toggle password visibility">👁</button>
+          </div>
+          <label>Organization</label>
+          <input type="text" id="signupOrganization" placeholder="Company name (optional)"/>
+          <button class="btn primary full" id="signupSubmit">Create account</button>
+        </form>
+
+        <p class="small">
+          Already have an account? <a href="#" data-route="login">Log in</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <main id="login" class="view">
+    <section class="container auth">
+      <div class="auth-card">
+        <h2>Welcome back</h2>
+        <p style="margin:0 0 28px; color:var(--muted); font-size:16px; line-height:1.6">Sign in to continue building your forms.</p>
+
+        <div class="oauth">
+          <button class="btn oauth-btn" id="googleBtn2">
+            <svg width="20" height="20" viewBox="0 0 24 24" style="flex-shrink:0">
+              <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+              <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+              <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+              <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+            </svg>
+            Continue with Google
+          </button>
+          <button class="btn oauth-btn" id="appleBtn2">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0">
+              <path d="M17.05 20.28c-.98.95-2.05.88-3.08.4-1.09-.5-2.08-.48-3.24 0-1.44.62-2.2.44-3.06-.4C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+            </svg>
+            Continue with Apple
+          </button>
+        </div>
+
+        <div class="divider"><span>or</span></div>
+
+        <form id="loginForm">
+          <label>Email</label>
+          <input type="email" id="loginEmail" required placeholder="you@example.com"/>
+          <label>Password</label>
+          <div class="password-wrapper">
+            <input type="password" id="loginPassword" required placeholder="••••••••"/>
+            <button type="button" class="password-toggle" id="loginPasswordToggle" aria-label="Toggle password visibility">👁</button>
+          </div>
+          <button class="btn primary full" id="loginSubmit">Sign in</button>
+        </form>
+
+        <p class="small">
+          Don't have an account yet? <a href="#" data-route="signup">Sign up</a><br/>
+          Forgot password? <a href="#" id="resetFake">Reset</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <main id="dashboard" class="view">
+    <section class="container">
+      <div class="dashboard-header">
+        <div class="dashboard-welcome">
+          <h1 id="dashboardWelcomeText">Welcome back!</h1>
+          <p style="color:var(--muted); font-size:18px; margin:8px 0 0">Here's what's happening with your forms</p>
+        </div>
+        <button class="btn primary" data-route="builder" style="min-width:180px">
+          <span style="font-size:20px; margin-right:8px">+</span> Create New Form
+        </button>
+      </div>
+
+      <div class="dashboard-stats-grid" id="dashboardStats">
+        <div class="stat-card primary">
+          <div class="stat-icon">📝</div>
+          <div class="stat-content">
+            <div class="stat-value" id="totalFormsCount">0</div>
+            <div class="stat-label">Total Forms</div>
+            <div class="stat-change" id="formsChange">+0 this month</div>
+          </div>
+        </div>
+        <div class="stat-card success">
+          <div class="stat-icon">📊</div>
+          <div class="stat-content">
+            <div class="stat-value" id="totalSubmissionsCount">0</div>
+            <div class="stat-label">Total Submissions</div>
+            <div class="stat-change" id="submissionsChange">+0 today</div>
+          </div>
+        </div>
+        <div class="stat-card info">
+          <div class="stat-icon">✅</div>
+          <div class="stat-content">
+            <div class="stat-value" id="publishedFormsCount">0</div>
+            <div class="stat-label">Published Forms</div>
+            <div class="stat-change" id="publishedChange">Active</div>
+          </div>
+        </div>
+        <div class="stat-card warning">
+          <div class="stat-icon">⏱️</div>
+          <div class="stat-content">
+            <div class="stat-value" id="avgCompletionTime">0s</div>
+            <div class="stat-label">Avg Completion</div>
+            <div class="stat-change" id="completionChange">Time per form</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dashboard-content-grid">
+        <div class="dashboard-section analytics-section">
+          <div class="section-header">
+            <h2>📈 Analytics Overview</h2>
+            <p>Your form performance insights and detailed statistics</p>
+          </div>
+          <div class="analytics-chart-container">
+            <div class="chart-card">
+              <h3>Submissions Trend (Last 14 Days)</h3>
+              <div class="chart-wrapper">
+                <canvas id="submissionsChart" width="400" height="200"></canvas>
+              </div>
+            </div>
+            <div class="chart-card">
+              <h3>Form Performance</h3>
+              <div class="performance-stats" id="performanceStats">
+                <div class="perf-item">
+                  <span class="perf-label">Completion Rate</span>
+                  <div class="perf-bar">
+                    <div class="perf-fill" id="completionRateBar" style="width:0%"></div>
+                  </div>
+                  <span class="perf-value" id="completionRateValue">0%</span>
+                </div>
+                <div class="perf-item">
+                  <span class="perf-label">Response Rate</span>
+                  <div class="perf-bar">
+                    <div class="perf-fill" id="responseRateBar" style="width:0%"></div>
+                  </div>
+                  <span class="perf-value" id="responseRateValue">0%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard-section">
+          <div class="section-header">
+            <h2>⚡ Quick Actions</h2>
+            <p>Get started quickly</p>
+          </div>
+          <div class="actions-grid">
+            <button class="action-card" data-route="builder">
+              <div class="action-icon">📝</div>
+              <div class="action-text">
+                <h3>Create Form</h3>
+                <p>Build a new form</p>
+              </div>
+              <div class="action-arrow">→</div>
+            </button>
+            <button class="action-card" id="dashboardFormsBtn">
+              <div class="action-icon">📋</div>
+              <div class="action-text">
+                <h3>My Forms</h3>
+                <p>Manage forms</p>
+              </div>
+              <div class="action-arrow">→</div>
+            </button>
+            <button class="action-card" id="dashboardAnalyticsBtn">
+              <div class="action-icon">📈</div>
+              <div class="action-text">
+                <h3>Analytics</h3>
+                <p>View insights</p>
+              </div>
+              <div class="action-arrow">→</div>
+            </button>
+            <button class="action-card" id="dashboardHistoryBtn">
+              <div class="action-icon">📥</div>
+              <div class="action-text">
+                <h3>Submissions</h3>
+                <p>View responses</p>
+              </div>
+              <div class="action-arrow">→</div>
+            </button>
+          </div>
+        </div>
+
+        <div class="dashboard-section">
+          <div class="section-header">
+            <h2>Recent Activity</h2>
+            <p>Your latest submissions</p>
+          </div>
+          <div class="activity-list" id="dashboardActivity">
+            <div class="activity-empty">No recent activity</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dashboard-section full-width">
+        <div class="section-header">
+          <h2>Submission Trends</h2>
+          <p>Last 7 days</p>
+        </div>
+        <div class="trends-chart" id="dashboardTrends">
+          <div class="trends-empty">No data available yet</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <main id="builder" class="view">
+    <section class="builder container">
+      <aside class="sidebar">
+        <div class="user-box">
+          <div class="user-avatar" id="userAvatar">👤</div>
+          <div class="user-info">
+            <div class="user-email" id="userEmail">Guest</div>
+            <div class="user-role-badge" id="userRole">Editor</div>
+          </div>
+          <button class="btn btn-sm ghost logout-btn" id="logoutBtn">Log out</button>
+        </div>
+
+        <div class="side-actions">
+          <button class="btn full" id="newFormBtn">+ New form</button>
+          <button class="btn full ghost" id="duplicateFormBtn">Duplicate form</button>
+          <button class="btn full ghost" id="loadFormsBtn">My forms</button>
+          <button class="btn full ghost" id="analyticsBtn">Dashboard</button>
+          <button class="btn full ghost" id="historyBtn">My submissions</button>
+          <button class="btn full ghost" id="manageUsersBtn" style="display:none">Manage Users</button>
+        </div>
+
+        <div class="saved-forms" id="savedForms"></div>
+        <div class="versions" id="versionList"></div>
+      </aside>
+
+      <div class="builder-main">
+        <div class="toolbar">
+          <input id="formTitle" class="title-input" placeholder="Form title" />
+          <div class="toolbar-actions">
+            <button class="btn ghost" id="previewBtn">👁️ Preview</button>
+            <button class="btn" id="saveDraftBtn">💾 Save draft</button>
+            <button class="btn primary" id="publishBtn">🚀 Publish</button>
+            <button class="btn ghost" id="unpublishBtn">Unpublish</button>
+          </div>
+        </div>
+
+        <div class="builder-body">
+          <div class="floating-publish" id="floatingPublish">
+            <button class="btn primary" id="floatingPublishBtn">🚀 Publish</button>
+          </div>
+          <div class="settings">
+            <div class="settings-header" id="settingsToggle">
+              <h3>⚙️ Form Settings</h3>
+              <span class="settings-toggle-icon">▼</span>
+            </div>
+            <div class="settings-content" id="settingsContent">
+              <div class="settings-grid">
+                <div>
+                  <label>Access mode</label>
+                  <select id="accessMode">
+                    <option value="public">Public (anyone can submit)</option>
+                    <option value="authOnly">Authenticated users only</option>
+                  </select>
+                </div>
+                <div>
+                  <label>Open date</label>
+                  <input type="datetime-local" id="openAt">
+                </div>
+                <div>
+                  <label>Close date</label>
+                  <input type="datetime-local" id="closeAt">
+                </div>
+              </div>
+              <div class="settings-grid settings-grid-second">
+                <div>
+                  <label class="inline">
+                    <input type="checkbox" id="blockGuests">
+                    Block guest users
+                  </label>
+                </div>
+                <div>
+                  <label class="inline">
+                    <input type="checkbox" id="singleSubmission">
+                    One submission per user
+                  </label>
+                </div>
+                <div>
+                  <label class="inline">
+                    <input type="checkbox" id="allowEditSubmissions">
+                    Allow editing submissions
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="question-list" id="fieldList"></div>
+
+          <div class="add-question">
+            <div class="add-question-header">
+              <div>
+                <h3 class="add-question-title">➕ Add Question</h3>
+                <p class="add-question-subtitle">Click a button below to add a new question to your form</p>
+              </div>
+              <button class="btn primary" id="addTemplateBtn">📋 Quick Template</button>
+            </div>
+            <div class="add-question-grid">
+              <button class="add-question-btn" data-type="text">
+                <span class="add-icon">📝</span>
+                <span class="add-label">Text</span>
+              </button>
+              <button class="add-question-btn" data-type="checkboxes">
+                <span class="add-icon">☑️</span>
+                <span class="add-label">Checkboxes</span>
+              </button>
+              <button class="add-question-btn" data-type="dropdown">
+                <span class="add-icon">📋</span>
+                <span class="add-label">Dropdown</span>
+              </button>
+              <button class="add-question-btn" data-type="number">
+                <span class="add-icon">🔢</span>
+                <span class="add-label">Number</span>
+              </button>
+              <button class="add-question-btn" data-type="date">
+                <span class="add-icon">📅</span>
+                <span class="add-label">Date</span>
+              </button>
+              <button class="add-question-btn" data-type="time">
+                <span class="add-icon">⏰</span>
+                <span class="add-label">Time</span>
+              </button>
+              <button class="add-question-btn" data-type="email">
+                <span class="add-icon">✉️</span>
+                <span class="add-label">Email</span>
+              </button>
+              <button class="add-question-btn" data-type="boolean">
+                <span class="add-icon">✅</span>
+                <span class="add-label">Yes/No</span>
+              </button>
+              <button class="add-question-btn" data-type="ratingStars">
+                <span class="add-icon">⭐</span>
+                <span class="add-label">Rating</span>
+              </button>
+              <button class="add-question-btn" data-type="range">
+                <span class="add-icon">🎚️</span>
+                <span class="add-label">Slider</span>
+              </button>
+              <button class="add-question-btn" data-type="phoneIQ">
+                <span class="add-icon">📱</span>
+                <span class="add-label">Phone</span>
+              </button>
+              <button class="add-question-btn" data-type="url">
+                <span class="add-icon">🔗</span>
+                <span class="add-label">Website URL</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="previewModal" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3 id="previewTitle">Preview</h3>
+        <button class="btn btn-sm ghost" id="closePreview">✕</button>
+      </div>
+      <form id="previewForm" class="preview-form"></form>
+      <div class="modal-foot">
+        <button class="btn ghost" id="closePreview2">Close</button>
+        <button class="btn primary" id="submitPreviewBtn" type="submit" form="previewForm">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="analyticsModal" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3>Overview Dashboard</h3>
+        <button class="btn btn-sm ghost" id="closeAnalytics">✕</button>
+      </div>
+      <div id="analyticsBody" class="analytics-body"></div>
+      <div class="modal-foot">
+        <button class="btn ghost" id="closeAnalytics2">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="historyModal" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3>My submissions</h3>
+        <button class="btn btn-sm ghost" id="closeHistory">✕</button>
+      </div>
+      <div id="historyBody" class="analytics-body"></div>
+      <div class="modal-foot">
+        <button class="btn ghost" id="closeHistory2">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="usersModal" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3>Manage Form Editors</h3>
+        <button class="btn btn-sm ghost" id="closeUsers">✕</button>
+      </div>
+      <div id="usersBody" class="analytics-body">
+        <div id="usersList"></div>
+        <div style="margin-top:24px; padding-top:24px; border-top:1px solid var(--line)">
+          <h4 style="margin:0 0 16px; font-size:16px; color:var(--primary)">Add User by Email</h4>
+          <div style="display:flex; gap:8px">
+            <input type="email" id="addUserEmail" placeholder="user@example.com" style="flex:1; padding:10px 12px; border:2px solid rgba(226,232,240,0.6); border-radius:8px; font-size:14px"/>
+            <button class="btn primary" id="addUserBtn">Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-foot">
+        <button class="btn ghost" id="closeUsers2">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+  <script type="module" src="js.js"></script>
+</body>
+</html>
