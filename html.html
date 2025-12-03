@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
 </head>
 <body>
   <header class="nav">
@@ -19,8 +20,8 @@
     </nav>
   </header>
 
-  <main id="home" class="view active">
-    <section class="hero container">
+  <main id="home" class="view active" data-aos="fade-in" data-aos-duration="700">
+    <section class="hero container" data-aos="fade-up" data-aos-duration="800">
       <div class="hero-content">
         <div class="hero-left">
           <h1>The simplest way to create forms</h1>
@@ -34,7 +35,7 @@
           <div class="subtle">No signup required to try the builder.</div>
         </div>
 
-        <div class="hero-right">
+        <div class="hero-right" data-aos="zoom-in" data-aos-delay="100">
           <div class="mock-card">
             <div class="mock-top">
               <span class="dot"></span><span class="dot"></span><span class="dot"></span>
@@ -52,65 +53,65 @@
       </div>
     </section>
 
-    <section class="stats-section container">
+    <section class="stats-section container" data-aos="fade-up" data-aos-duration="800">
       <div class="stats-header">
         <h2 class="section-title">Platform Statistics</h2>
         <p class="section-subtitle">Join thousands of users building amazing forms</p>
       </div>
       <div class="stats-grid">
-        <div class="stat-card">
+        <div class="stat-card" data-aos="fade-up" data-aos-delay="0">
           <div class="stat-number">10K+</div>
           <div class="stat-label">Forms Created</div>
         </div>
-        <div class="stat-card">
+        <div class="stat-card" data-aos="fade-up" data-aos-delay="80">
           <div class="stat-number">50K+</div>
           <div class="stat-label">Submissions</div>
         </div>
-        <div class="stat-card">
+        <div class="stat-card" data-aos="fade-up" data-aos-delay="160">
           <div class="stat-number">5K+</div>
           <div class="stat-label">Active Users</div>
         </div>
-        <div class="stat-card">
+        <div class="stat-card" data-aos="fade-up" data-aos-delay="240">
           <div class="stat-number">99.9%</div>
           <div class="stat-label">Uptime</div>
         </div>
       </div>
     </section>
 
-    <section class="features container">
+    <section class="features container" data-aos="fade-up" data-aos-duration="800">
       <h2 class="section-title">Powerful Features</h2>
       <div class="features-grid">
-        <div class="feature">
+        <div class="feature" data-aos="fade-up" data-aos-delay="0">
           <h3>Multi-field builder</h3>
           <p>Add text, choices, numbers, date/time, rating and more. Build complex forms with ease.</p>
         </div>
-        <div class="feature">
+        <div class="feature" data-aos="fade-up" data-aos-delay="80">
           <h3>Publish & share</h3>
           <p>One click generates a public URL for your form. Share instantly with anyone.</p>
         </div>
-        <div class="feature">
+        <div class="feature" data-aos="fade-up" data-aos-delay="160">
           <h3>Analytics & history</h3>
           <p>Track submissions and view your own history. Get insights into your form performance.</p>
         </div>
-        <div class="feature">
+        <div class="feature" data-aos="fade-up" data-aos-delay="240">
           <h3>Real-time preview</h3>
           <p>See your form exactly as users will see it. Preview before publishing.</p>
         </div>
-        <div class="feature">
+        <div class="feature" data-aos="fade-up" data-aos-delay="320">
           <h3>Custom validation</h3>
           <p>Set min/max values, regex patterns, and custom rules for each field.</p>
         </div>
-        <div class="feature">
+        <div class="feature" data-aos="fade-up" data-aos-delay="400">
           <h3>Version control</h3>
           <p>Automatic versioning when you make changes. Never lose your work.</p>
         </div>
       </div>
     </section>
 
-    <section class="showcase container">
+    <section class="showcase container" data-aos="fade-up" data-aos-duration="800">
       <h2 class="section-title">Why Choose Formify?</h2>
       <div class="showcase-grid">
-        <div class="showcase-card">
+        <div class="showcase-card" data-aos="fade-up" data-aos-delay="0">
           <div class="showcase-icon">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
@@ -174,10 +175,10 @@
       </div>
     </section>
 
-    <section class="testimonials-section container">
+    <section class="testimonials-section container" data-aos="fade-up" data-aos-duration="800">
       <h2 class="section-title">What Our Users Say</h2>
       <div class="testimonials-grid">
-        <div class="testimonial-card">
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="0">
           <div class="testimonial-content">
             <p>"Formify made creating our contact forms so easy. The analytics feature is a game-changer!"</p>
           </div>
@@ -216,8 +217,8 @@
       </div>
     </section>
 
-    <section class="cta-section container">
-      <div class="cta-box animated-border">
+    <section class="cta-section container" data-aos="zoom-in" data-aos-duration="800">
+      <div class="cta-box animated-border" data-aos="zoom-in" data-aos-delay="100">
         <h2>Ready to get started?</h2>
         <p>Join thousands of users creating beautiful forms with Formify</p>
         <div class="cta-actions">
@@ -236,9 +237,9 @@
     </footer>
   </main>
 
-  <main id="signup" class="view">
+  <main id="signup" class="view" data-aos="fade-in" data-aos-duration="600">
     <section class="container auth">
-      <div class="auth-card">
+      <div class="auth-card" data-aos="zoom-in" data-aos-duration="700">
         <h2>Create your Formify account</h2>
         <p style="margin:0 0 28px; color:var(--muted); font-size:16px; line-height:1.6">Start building beautiful forms in seconds. Free forever.</p>
 
@@ -284,9 +285,9 @@
     </section>
   </main>
 
-  <main id="login" class="view">
+  <main id="login" class="view" data-aos="fade-in" data-aos-duration="600">
     <section class="container auth">
-      <div class="auth-card">
+      <div class="auth-card" data-aos="zoom-in" data-aos-duration="700">
         <h2>Welcome back</h2>
         <p style="margin:0 0 28px; color:var(--muted); font-size:16px; line-height:1.6">Sign in to continue building your forms.</p>
 
@@ -329,9 +330,9 @@
     </section>
   </main>
 
-  <main id="dashboard" class="view">
+  <main id="dashboard" class="view" data-aos="fade-in" data-aos-duration="600">
     <section class="container">
-      <div class="dashboard-header">
+      <div class="dashboard-header" data-aos="fade-up" data-aos-duration="700">
         <div class="dashboard-welcome">
           <h1 id="dashboardWelcomeText">Welcome back!</h1>
           <p style="color:var(--muted); font-size:18px; margin:8px 0 0">Here's what's happening with your forms</p>
@@ -377,7 +378,7 @@
       </div>
 
       <div class="dashboard-content-grid">
-        <div class="dashboard-section analytics-section">
+        <div class="dashboard-section analytics-section" data-aos="fade-up" data-aos-delay="0">
           <div class="section-header">
             <h2>📈 Analytics Overview</h2>
             <p>Your form performance insights and detailed statistics</p>
@@ -411,7 +412,7 @@
           </div>
         </div>
 
-        <div class="dashboard-section">
+        <div class="dashboard-section" data-aos="fade-up" data-aos-delay="120">
           <div class="section-header">
             <h2>⚡ Quick Actions</h2>
             <p>Get started quickly</p>
@@ -463,7 +464,7 @@
         </div>
       </div>
 
-      <div class="dashboard-section full-width">
+      <div class="dashboard-section full-width" data-aos="fade-up" data-aos-delay="320">
         <div class="section-header">
           <h2>Submission Trends</h2>
           <p>Last 7 days</p>
@@ -475,9 +476,9 @@
     </section>
   </main>
 
-  <main id="builder" class="view">
+  <main id="builder" class="view" data-aos="fade-in" data-aos-duration="600">
     <section class="builder container">
-      <aside class="sidebar">
+      <aside class="sidebar" data-aos="fade-right" data-aos-duration="700">
         <div class="user-box">
           <div class="user-avatar" id="userAvatar">👤</div>
           <div class="user-info">
@@ -500,7 +501,7 @@
         <div class="versions" id="versionList"></div>
       </aside>
 
-      <div class="builder-main">
+      <div class="builder-main" data-aos="fade-left" data-aos-duration="700">
         <div class="toolbar">
           <input id="formTitle" class="title-input" placeholder="Form title" />
           <div class="toolbar-actions">
@@ -561,9 +562,9 @@
             </div>
           </div>
 
-          <div class="question-list" id="fieldList"></div>
+          <div class="question-list" id="fieldList" data-aos="fade-up" data-aos-duration="700"></div>
 
-          <div class="add-question">
+          <div class="add-question" data-aos="fade-up" data-aos-delay="150">
             <div class="add-question-header">
               <div>
                 <h3 class="add-question-title">➕ Add Question</h3>
@@ -628,7 +629,7 @@
   </main>
 
   <div class="modal" id="previewModal" aria-hidden="true">
-    <div class="modal-card">
+    <div class="modal-card" data-aos="zoom-in" data-aos-duration="300">
       <div class="modal-head">
         <h3 id="previewTitle">Preview</h3>
         <button class="btn btn-sm ghost" id="closePreview">✕</button>
@@ -642,7 +643,7 @@
   </div>
 
   <div class="modal" id="analyticsModal" aria-hidden="true">
-    <div class="modal-card">
+    <div class="modal-card" data-aos="zoom-in" data-aos-duration="300">
       <div class="modal-head">
         <h3>Overview Dashboard</h3>
         <button class="btn btn-sm ghost" id="closeAnalytics">✕</button>
@@ -655,7 +656,7 @@
   </div>
 
   <div class="modal" id="historyModal" aria-hidden="true">
-    <div class="modal-card">
+    <div class="modal-card" data-aos="zoom-in" data-aos-duration="300">
       <div class="modal-head">
         <h3>My submissions</h3>
         <button class="btn btn-sm ghost" id="closeHistory">✕</button>
@@ -668,7 +669,7 @@
   </div>
 
   <div class="modal" id="usersModal" aria-hidden="true">
-    <div class="modal-card">
+    <div class="modal-card" data-aos="zoom-in" data-aos-duration="300">
       <div class="modal-head">
         <h3>Manage Form Editors</h3>
         <button class="btn btn-sm ghost" id="closeUsers">✕</button>
@@ -691,6 +692,13 @@
 
   <div id="toast" class="toast"></div>
 
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      offset: 80
+    });
+  </script>
   <script type="module" src="js.js"></script>
 </body>
 </html>
